@@ -24,20 +24,16 @@ body {
 .main-header {
   background-color: #f7f7f7;
   /* padding: 20px;
-  padding-left: 40px;
+  1adding-left: 40px;
   padding-right: 40px; */
-  padding: 20px 40px;
-  margin-bottom: 60px;
+  padding: 20px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
 nav {
   font-size: 18px;
   /* text-align: center; */
-}
-
-article {
-  margin-bottom: 60px;
 }
 
 .post-header {
@@ -86,7 +82,7 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 ul,
@@ -265,11 +261,12 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
 /* End Of Secion 2 Css Fundmentals  */
 
 /* Floats */
 
-.author-img {
+/* .author-img {
   float: left;
   margin-bottom: 20px;
 }
@@ -287,10 +284,6 @@ h1 {
 nav {
   float: right;
 }
-
-/* .clear {
-  clear:both
-} */
 
 .clearfix::after {
   content: "";
@@ -310,4 +303,94 @@ aside {
 
 footer {
   clear: both;
+} */
+
+/* Flex Box */
+/* 
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+.author-container p {
+  align-self: center;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+aside {
+  flex: 0 0 300px;
+} */
+
+/* CSS GRID  */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+  justify-content: start;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+article {
+}
+
+aside {
+}
+footer {
+  grid-column: 1 / -1;
+  align-content: start;
+  justify-self: center;
+  align-self: end;
+  margin-bottom: 20px;
 }

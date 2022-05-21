@@ -40,6 +40,28 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: 250px 250px 150px 150px;
+        grid-template-rows: 300px 200px; */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: 1fr 1fr 1fr ; */
+        grid-template-rows: repeat(2, 1fr);
+        /* gap: 30px; */
+        column-gap: 30px;
+        row-gap: 60px;
+        display: none;
+      }
+
+      .el--8 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+      .el--2 {
+        /* grid-column: 1/ 2; */
+        /* grid-column: 1 / span 4; */
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
       }
 
       .container--2 {
@@ -53,6 +75,26 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        /* Aligning tracks inside the container making them fill in the empty space */
+        justify-content: center;
+        /* justify-content: space-between; */
+
+        align-content: center;
+        /* align-content: space-between; */
+
+        /* Aligning items inside the cells  */
+        /* align-items: start; */
+        /* align-items: end; */
+        align-items: center;
+        justify-items: center;
+      }
+      .el--3 {
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
