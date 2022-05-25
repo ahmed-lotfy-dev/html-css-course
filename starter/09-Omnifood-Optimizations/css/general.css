@@ -70,6 +70,10 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* now its support from microsoft edge and even safari for iphones  */
+  /* as the time of 25-5-2022 */
+  scroll-behavior: smooth;
 }
 
 body {

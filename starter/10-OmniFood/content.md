@@ -124,6 +124,7 @@ About Omnifood
 For Business
 Cooking partners
 Careers
+
 Recipe directory
 Help center
 Privacy & terms
@@ -134,10 +135,10 @@ Privacy & terms
 
 - Logo + Navigation
 - Hero
-- Featured In
-- How It Work
-- Meals (and list of Diets)
-- Testimonials + Gallery
-- Pricing + Features
-- CTA - Call To Action
+- Featured in
+- How it works
+- Meals (and list of diets)
+- Testimonials + gallery
+- Pricing + features
+- CTA
 - Footer
