@@ -578,9 +578,11 @@
                 first meal is on us!
               </p>
 
-              <form class="cta-form" method="POST" name="contact" netlify>
-<!--                 <form class="ct-form" name="contact" method="POST" data-netlify="true"> -->
-
+<!--               <form class="cta-form" method="POST" name="contact" netlify> -->
+<!--               <form class="ct-form" name="contact" method="POST" data-netlify="true"> -->
+                   <form class="cta-form" name="contact" method="POST" data-netlify="true">
+                   <input type="hidden" name="contact" value="contact">
+                     
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
@@ -613,7 +615,7 @@
                   </select>
                 </div>
 
-                <button class="btn btn--form">Sign up now</button>
+                <button type="submit" class="btn btn--form">Sign up now</button>
 
                 <!-- <input type="checkbox" />
                 <input type="number" /> -->
